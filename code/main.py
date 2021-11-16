@@ -1,8 +1,8 @@
 from sklearn.metrics import mean_squared_error
-from module_2.course_3.work.src.data_work import *
-from module_2.course_3.work.src.model_features import *
-from module_2.course_3.work.src.busines_features import *
-from module_2.course_3.work.src.metric_features import *
+from src.data_work import *
+from src.model_features import *
+from src.busines_features import *
+from src.metric_features import *
 
 pd.set_option('display.max_columns', None)
 pd.set_option('display.expand_frame_repr', False)
