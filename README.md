@@ -10,7 +10,7 @@ For this, a machine learning model is being built, which will help determine
 the region where production will bring the greatest profit with the least risk 
 of loss.
 
-## Areas of the project
+## Application areas
 * IT company
 * Industry companies
 * Startups
