@@ -76,9 +76,7 @@ def step_5(data, model, region_number):
               predictions_500.iloc[0:count_best_points],
               product_profit,
               break_even_product_quantity
-          )
-          )
-          )
+          )))
 
 
 step_5(data_0, model_0, region_number=1)
