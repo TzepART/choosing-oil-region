@@ -1,8 +1,8 @@
 # ML Project "Determination of the region of oil production"
 
-[Jupiter note [ENG]](jupiter/8_region_of_oil%20production_en.ipynb)
+[Jupiter notebook [ENG]](jupiter/8_region_of_oil%20production_en.ipynb)
 
-[Jupiter note [RUS]](jupiter/8_region_of_oil%20production.ipynb)
+[Jupiter notebook [RUS]](jupiter/8_region_of_oil%20production_ru.ipynb)
 
 [Project source code](code)
 
