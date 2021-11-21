@@ -22,18 +22,18 @@ data_2 = data_2.drop(columns=['id'])
 
 
 def step_3(researched_data: DataFrame):
-    # Разобъем данные на обучающую и валидационную выборки в соотношении 75:25
+    # Bite data into training and validation sets in a 75:25 ratio
     data_train_valid = separate_on_train_and_valid_data(researched_data, target_field='product', valid_size_value=0.25)
-    # Обучим модель и сделайте предсказания на валидационной выборке.
+    # Train the model and make predictions on the validation set.
     model = build_linear_regression_model(
         data_train_valid.features_train,
         data_train_valid.target_train,
         count_jobs=-1
     )
-    # Сохраним предсказания и правильные ответы на валидационной выборке.
+    # Save the predictions and correct answers on the validation set
     predictions = model.predict(data_train_valid.features_valid)
     real_target_values = data_train_valid.target_valid
-    # Выведем на экране средний запас предсказанного сырья и RMSE модели.
+    # Display the average stock of the predicted raw materials and the RMSE model
     series_predictions = pd.Series(predictions)
     mean = series_predictions.mean()
     mse = mean_squared_error(real_target_values, predictions)
@@ -76,9 +76,7 @@ def step_5(data, model, region_number):
               predictions_500.iloc[0:count_best_points],
               product_profit,
               break_even_product_quantity
-          )
-          )
-          )
+          )))
 
 
 step_5(data_0, model_0, region_number=1)
